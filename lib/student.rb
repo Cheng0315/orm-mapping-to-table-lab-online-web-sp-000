@@ -22,6 +22,8 @@ class Student
     sql = <<-SQL
       ALTER TABLE student DELETE student
     SQL
+
+    DB[:conn].execute(sql)
   end
 
 end
